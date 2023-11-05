@@ -1,17 +1,14 @@
 --- 
-# TinyTapeout project information
+# Información del Proyecto
 project:
-  wokwi_id:    0        # If using wokwi, set this to your project's ID
+  wokwi_id:    0        # NO TOCAR, dejar en 0
 
-# If using an HDL, set wokwi_id as 0 and uncomment and list your source files here. 
-# Source files must be in ./src and you must list each source file separately
+# Archivos de Verilog que componen el diseño
+# DEBEN estar en la carpeta src
   source_files:
     - tt_um_src.v
     
-  top_module:  "tt_um_src"      # Put the name of your top module here, must start with "tt_um_". Make it unique by including your github username
+  top_module:  "tt_um_src"      # Nombre del Módulo "Top"
 
-# How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "1x1"    # Valid values: 1x1, 1x2, 2x2, 4x2 or 8x2
-
-# Keep a track of the submission yaml
-#yaml_version: 5
+# Información adicional para compatibilidad con TinyTapeot
+  tiles: "1x1"    # NO TOCAR, dejar en "1x1"
